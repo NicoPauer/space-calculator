@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name = "viewport" content = "width=device-width; height=device-height; initial-scale=1"/>
+	<meta name="author" content = "Nico Pauer"/>
+	<meta name="keywords" content = "How much objets fits in a box?; space calculator"/>
+	<title>Space Calculator</title>
+	<link rel = "stylesheet" href = "style.css" />
+	<script src = "space-logic.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calc how much objects could contains a space</h1>
+    </header>
+    <section id = "program">
+	    <form id = "calculator">
+		    <hr />
+		    	<input id = "objects-width" placeholder = "width for the objects" type = "text" /> <br/>
+		    	<input id = "distance-width" placeholder = "distance between each object" type = "text" /> <br />
+		    	<input id = "space-width" placeholder = "width for the space" type = "text" /><br />
+		    <hr />
+		    <input id = "calc" value = "Calc" type = "button" onclick = "capacityCalc(document.getElementById('objects-width').value, document.getElementById('distance-width').value, document.getElementById('space-width').value);"/>
+	    </form><br />
+	    <div id = "result"></div>
+    </section>
+    <footer>© 2024 Nico Pauer</footer>
+</body>
+</html>
